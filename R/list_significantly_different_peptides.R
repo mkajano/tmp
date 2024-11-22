@@ -1,9 +1,9 @@
 #' Peptides significantly different between states
 #'
 #' Returns list of the dataframes with significantly different peptides
-#' @param df1 differences in averages data.frame calculated using diff_ave function
-#' @param CI critical interval, here is multiple sets are using maximum CI is used.
-#' @param pv pvalues dataframes calculated using pv_timepoint function
+#' @param df differences in averages data.frame calculated using diff_ave function
+#' @param alpha critical interval, here is multiple sets are using maximum CI is used.
+#' @param replicates number of replicates
 #' @param pv_cutoff p-value cutoff here set up to 0.01
 #' @return list of the dataframes
 #' @export

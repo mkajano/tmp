@@ -21,11 +21,9 @@
 #' file_nm<-system.file("extdata", "All_results_table.csv", package = "HDXBoxeR")
 #' a<- output_tc(file_nm)
 #' b<-output_tc(file_nm, percent=TRUE)
-#' woods_CI_plot_frac(th=a, pv_cutoff = 0.001, alpha = 0.01, replicates=3)
+#' woods_CI_plot_frac(th=a, pv_cutoff = 0.01, alpha = 0.01, replicates=3)
 #' }
 #' @export
-#'
-
 woods_CI_plot_frac<-function(th, replicates=3,
                         pv_cutoff=0.01, states, alpha=0.01, ylim=c(0,1.2), ...){
   if(missing(states)) states=unique(th$Protein.State)
