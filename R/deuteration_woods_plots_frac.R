@@ -76,7 +76,7 @@ deuteration_woods_timepoints_frac<-function(input_data,times, replicates=3,
 
 deuteration_woods_timepoints_frac_list<-function(list_input_data,times, replicates=3,
                                             cola=NA, ylim=c(0,1.1), ...) {
-  if(missing(times)) times=unique(input_data$Deut.Time)
+  if(missing(times)) times=unique(list_input_data[[1]]$Deut.Time)
 
   oldpar<-par(no.readonly = TRUE)
   on.exit(par(oldpar))

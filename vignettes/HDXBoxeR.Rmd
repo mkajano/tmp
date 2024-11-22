@@ -650,10 +650,10 @@ b<-output_tp(file_nm, percent=T)
 pymol_script_significant_peptide(a, path=tempdir())
 pymol_script_significant_peptide(a,  ranges=c(-Inf, seq(-120, 120, by=10), Inf), pv_cutoff = 0.005,replicates = 3, order.pep=FALSE, path=tempdir())
 ###same but for procent deuteration
-pymol_script_significant_peptide_proc(input_proc = b, input_up = a, path=tempdir(), ranges=c(-Inf, seq(-120, 120, by=10), Inf), pv_cutoff = 0.005,replicates = 3)
+pymol_script_significant_peptide_proc(input_proc = b, input_up = a, path=tempdir(), ranges=c(-Inf, seq(-120, 120, by=10), Inf), alpha=0.005, pv_cutoff = 0.005,replicates = 3)
 
 ###scripts prepared by residue
-pymol_script_significant_residue(a,  ranges=c(-Inf, seq(-120, 120, by=10), Inf), path=tempdir(), pv_cutoff = 0.005,replicates = 3)
+pymol_script_significant_residue(a,  ranges=c(-Inf, seq(-120, 120, by=10), Inf), path=tempdir(), alpha=0.005,pv_cutoff = 0.005,replicates = 3)
 
 ```
 
